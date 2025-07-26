@@ -1,0 +1,5 @@
+# Ignore node_modules and build output
+node_modules
+.next
+# Do NOT ignore out, as it is needed for GitHub Pages deployment
+# out

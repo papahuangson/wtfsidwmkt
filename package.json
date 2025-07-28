@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export"
+    "export": "next export",
+    "preinstall": "if [ ! -f package-lock.json ]; then npm install --package-lock-only; fi"
   },
   "dependencies": {
     "next": "15.0.0",

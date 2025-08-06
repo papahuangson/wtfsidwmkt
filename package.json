@@ -1,5 +1,5 @@
 {
-  "name": "nextjs15-app",
+  "name": "personal-site",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -7,16 +7,36 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export",
-    "preinstall": "if [ ! -f package-lock.json ]; then npm install --package-lock-only; fi"
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@mdx-js/loader": "^3.0.0",
+    "@mdx-js/react": "^3.0.0",
+    "@next/mdx": "^15.0.0",
+    "@types/mdx": "^2.0.10",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.0.0",
+    "focus-trap-react": "^10.2.3",
+    "framer-motion": "^10.16.16",
+    "gray-matter": "^4.0.3",
+    "lucide-react": "^0.263.1",
     "next": "15.0.0",
+    "next-themes": "^0.2.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.2.0"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "autoprefixer": "^10.4.16",
     "eslint": "^8.0.0",
-    "eslint-config-next": "^15.0.0"
+    "eslint-config-next": "^15.0.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.3.3"
   }
 }

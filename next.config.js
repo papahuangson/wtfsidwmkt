@@ -1,11 +1,18 @@
+const withMDX = require('@next/mdx')({
+  extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: [],
+    rehypePlugins: [],
+  },
+});
+
 /** @type {import('next').NextConfig} */
-const repoName = 'wtfsidwmkt';
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
-  output: 'export',
-  basePath: '/' + repoName,
-  assetPrefix: '/' + repoName + '/',
+  images: {
+    domains: ['images.unsplash.com', 'via.placeholder.com'],
+  },
+  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
 };
 
-module.exports = nextConfig;
+module.exports = withMDX(nextConfig);

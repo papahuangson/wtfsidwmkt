@@ -1,8 +1,7 @@
-export default function HomePage() {
+export default function Home() {
   return (
-    <main style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "100vh" }}>
-      <h1>Welcome to Next.js 15!</h1>
-      <p>This is your home landing page.</p>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <h1 className="text-4xl font-bold">Welcome to Next.js 15 + TypeScript + Tailwind CSS!</h1>
     </main>
-  );
+  )
 }

@@ -1,5 +1,27 @@
-# Ignore node_modules and build output
+# dependencies
 node_modules
+.pnp
+.pnp.js
+
+# testing
+coverage
+
+# production
 .next
-# Do NOT ignore out, as it is needed for GitHub Pages deployment
-# out
+out
+
+# misc
+next-env.d.ts
+*.local
+.env*.local
+.env
+!.env.example
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+
+# macOS
+.DS_Store
